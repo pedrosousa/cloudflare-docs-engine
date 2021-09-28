@@ -34,7 +34,7 @@ const robots = `User-agent: *\nDisallow: /`
 
 if (pathPrefix !== "") {
   // We are running from inside `.docs/`
-  const dir = "$PWD/"
+  const dir = `${process.env.PWD}/`
   const folderName = pathPrefix.substr(1)
 
   exec(`mv "${dir}public" "${dir}${folderName}"`, handleExec(() => {
