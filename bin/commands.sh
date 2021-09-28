@@ -34,7 +34,7 @@ if [ "$1" = "ghactionsbootstrap" ]; then
   cd .docs
 
   echo "Running npm install inside .docs"
-  npm install
+  npm install --legacy-peer-deps
 fi
 
 
@@ -54,7 +54,7 @@ if [ "$1" = "bootstrap" ]; then
   rm -rf node_modules/
 
   echo "Running npm install inside .docs"
-  npm install
+  npm install --legacy-peer-deps
 fi
 
 
