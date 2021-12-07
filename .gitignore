@@ -75,3 +75,4 @@ yarn-error.log
 # Workers dist
 dist/
 
+.vscode/
